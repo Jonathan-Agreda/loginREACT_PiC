@@ -28,6 +28,11 @@ export const Login = () => {
     const errorEmail = ((username === "" || !username.includes('@')) && dataSend)
     const errorPassword = ((password === "" || password.length < 6) && dataSend)
 
+    const errorStyleInput = {
+        backgroundColor: errorPassword ? 'rgba(25, 129, 129, 0.747)' : ' ',
+        border: errorPassword ? '1px solid rgba(226, 5, 5, 0.486)' : ''
+    }
+
     return (
         <div className='login-form-container'>
             <form className='login-form'>
@@ -36,7 +41,8 @@ export const Login = () => {
                     className={`input-field ${errorEmail ? 'input-field-error' : ''}`}
                     onChange={(event) => handleInputChange(event)} />
                 <input type='password' name='password' placeholder='Password'
-                    className={`input-field ${errorPassword ? 'input-field-error' : ''}`}
+                    style={errorStyleInput}
+                    className={`input-field`}
                     onChange={(event) => handleInputChange(event)} />
                 <button type="submit"
                     className='submit-button'
