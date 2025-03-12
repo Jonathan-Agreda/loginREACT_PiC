@@ -29,7 +29,7 @@ export const Login = () => {
     const errorPassword = ((password === "" || password.length < 6) && dataSend)
 
     const errorStyleInput = {
-        backgroundColor: errorPassword ? 'rgba(25, 129, 129, 0.747)' : ' ',
+        backgroundColor: errorPassword ? 'rgba(24, 129, 129, 0.747)' : ' ',
         border: errorPassword ? '1px solid rgba(226, 5, 5, 0.486)' : ''
     }
 
