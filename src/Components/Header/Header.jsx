@@ -19,12 +19,25 @@ const StyledImg = stayled.img`
     margin-left: 40px;
 `
 
+const ButtonRegister = stayled.button.attrs(props => ({
+    disabled: props.disabled || false
+}))`
+    background-color: ${({ primary, bgColor = "gray" }) => primary ? bgColor : 'red'};
+    color: #5c5a72;
+    border: 1px solid #e3d7ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.5s ease-in all;
+`
+
 export const Header = () => {
     return (
         <StyledHeader>
             <StyledImg src={wonkaLogo} alt="WonkaLogo" />
             <div className='register'>
-                <button className='register-button'>Register</button>
+                <ButtonRegister primary bgColor="yellow" >Register</ButtonRegister>
             </div>
         </StyledHeader>
     )
