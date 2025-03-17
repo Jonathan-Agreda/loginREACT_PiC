@@ -1,13 +1,19 @@
-import './Header.css'
-
 import wonkaLogo from '../../assets/WonkaLogo.png'
 
 export const Header = () => {
     return (
-        <header className='header'>
-            <img src={wonkaLogo} alt="WonkaLogo" />
-            <div className='register'>
-                <button className='register-button'>Register</button>
+        <header className='w-full p-5 bg-[#684fa3] flex flex-row justify-between items-center shadow-md'>
+            <img
+                src={wonkaLogo}
+                alt='WonkaLogo'
+                className='w-[140px] ml-10'
+            />
+            <div>
+                <button className='bg-white text-[#5c5a72] border border-[#e3d7ff] 
+        px-5 py-2.5 rounded-[10px] cursor-pointer ml-10 transition-all ease-in 
+        duration-500 hover:rounded-[25px] hover:border-black'>
+                    Register
+                </button>
             </div>
         </header>
     )

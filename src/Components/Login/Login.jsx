@@ -1,4 +1,3 @@
-import './Login.css';
 import { useState } from 'react';
 
 export const Login = () => {
@@ -29,19 +28,31 @@ export const Login = () => {
     const errorPassword = ((password === "" || password.length < 6) && dataSend)
 
     return (
-        <div className='login-form-container'>
-            <form className='login-form'>
-                <h1>Login</h1>
-                <input type='text' name='mail' placeholder='Username'
-                    className={`input-field ${errorEmail ? 'input-field-error' : ''}`}
-                    onChange={(event) => handleInputChange(event)} />
-                <input type='password' name='password' placeholder='Password'
-                    className={`input-field ${errorPassword ? 'input-field-error' : ''}`}
-                    onChange={(event) => handleInputChange(event)} />
-                <button type="submit"
-                    className='submit-button'
-                    onClick={(event) => handleDataSend(event)}
-                >Login</button>
+        <div className='mx-auto mt-[200px] flex justify-center items-center w-1/2 max-w-[28rem] min-w-[15px] flex-1'>
+            <form className='w-full bg-[#684fa3] p-10 rounded-[10px] shadow-lg flex flex-col items-end gap-7'>
+                <h1 className='w-full text-center text-white'>Login</h1>
+                <input
+                    type='text'
+                    name='mail'
+                    placeholder='Username'
+                    className='w-full p-[15px] border-2 border-[#e3d7ff] rounded-[10px] text-lg'
+                    onChange={(event) => handleInputChange(event)}
+                />
+                <input
+                    type='password'
+                    name='password'
+                    placeholder='Password'
+                    className='w-full p-[15px] border-2 border-[#e3d7ff] rounded-[10px] text-lg'
+                    onChange={(event) => handleInputChange(event)}
+                />
+                <button
+                    type='submit'
+                    className='text-center w-2/5 p-[15px] bg-white text-[#5c5a72] border 
+              border-[#e3d7ff] rounded-[10px] cursor-pointer transition-all ease-in 
+              duration-500 text-lg min-w-[7rem] hover:rounded-[25px] hover:border-black'
+                    onClick={(event) => handleDataSend(event)}>
+                    Login
+                </button>
             </form>
         </div>
     )
