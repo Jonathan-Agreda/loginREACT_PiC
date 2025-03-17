@@ -2,7 +2,7 @@ import wonkaLogo from '../../assets/WonkaLogo.png'
 
 export const Header = () => {
     return (
-        <header className='w-full p-5 bg-[#684fa3] flex flex-row justify-between items-center shadow-md'>
+        <header className='w-full p-5 bg-wonkaPurple dark:bg-gray-800 flex flex-row justify-between items-center shadow-md'>
             <img
                 src={wonkaLogo}
                 alt='WonkaLogo'
