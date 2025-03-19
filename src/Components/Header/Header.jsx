@@ -6,7 +6,7 @@ export const Header = () => {
             <img
                 src={wonkaLogo}
                 alt='WonkaLogo'
-                className='w-[140px] ml-10'
+                className='w-[140px] sm:w-[50px] md:w-[100px] ml-10'
             />
             <div>
                 <button className='bg-white text-[#5c5a72] border border-[#e3d7ff] 
