@@ -35,22 +35,20 @@ export const Login = () => {
                     type='text'
                     name='mail'
                     placeholder='Username'
-                    className='w-full p-[15px] border-2 border-[#e3d7ff] rounded-[10px] text-lg focus:bg-slate-200'
+                    className='inputForm'
                     onChange={(event) => handleInputChange(event)}
                 />
                 <input
                     type='password'
                     name='password'
                     placeholder='Password'
-                    className={`w-full p-[15px] border-2 border-[#e3d7ff] rounded-[10px] text-lg focus:bg-slate-200 
+                    className={`inputForm 
                         ${errorPassword ? 'bg-[rgba(236,129,129,0.747)] border-[rgba(226,5,5,0.486)]' : ''}`}
                     onChange={(event) => handleInputChange(event)}
                 />
                 <button
                     type='submit'
-                    className='text-center w-2/5 p-[15px] bg-white text-[#5c5a72] border 
-              border-[#e3d7ff] rounded-[10px] cursor-pointer transition-all ease-in 
-              duration-500 text-lg min-w-[7rem] hover:rounded-[25px] hover:border-black'
+                    className='buttonApp hover:rounded-[25px] hover:border-black'
                     onClick={(event) => handleDataSend(event)}>
                     Login
                 </button>

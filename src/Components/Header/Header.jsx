@@ -9,8 +9,7 @@ export const Header = () => {
                 className='w-[140px] sm:w-[50px] md:w-[100px] ml-10'
             />
             <div>
-                <button className='bg-white text-[#5c5a72] border border-[#e3d7ff] 
-        px-5 py-2.5 rounded-[10px] cursor-pointer ml-10 transition-all ease-in 
+                <button className='buttonApp transition-all ease-in 
         duration-500 hover:rounded-[25px] hover:border-black'>
                     Register
                 </button>

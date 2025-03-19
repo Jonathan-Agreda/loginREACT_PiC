@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .buttonApp {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+    .inputForm{
+        @apply w-full p-[15px] border-2 border-[#e3d7ff] rounded-[10px] text-lg focus:bg-slate-200;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
